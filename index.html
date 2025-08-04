@@ -20,12 +20,24 @@
             opacity: 1;
         }
 
-        /* Style the SVG rectangles on hover */
+        /* Style the SVG regions on hover */
+        .map-region {
+            stroke: none; /* Make the borders not visible by default */
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+        .map-region:hover {
+            stroke: #2563eb; /* Add a border on hover */
+            stroke-width: 3px;
+            fill: rgba(37, 99, 235, 0.4); /* Add a fill color on hover */
+        }
+
+/*         /* Style the SVG rectangles on hover */
         .map-region:hover {
             stroke-width: 5px;
             fill: rgba(37, 99, 235, 0.4); /* Tailwind's blue-600 with opacity */
             cursor: pointer;
-        }
+        } */
     </style>
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen font-sans p-4">
